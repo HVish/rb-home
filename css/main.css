@@ -12,7 +12,11 @@ nav.navbar {
 .logo {
     width: 50px;
     padding-top: 2px;
-    margin-right: 5px;
+    float: left;
+}
+
+.navbar-brand {
+    font-size: 22px;
 }
 
 .container-fluid {
