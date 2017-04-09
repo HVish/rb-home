@@ -21,8 +21,6 @@ nav.navbar {
 
 .landing-section {
     height: 100vh;
-    background-image: url(../img/cover.jpg);
-    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -46,7 +44,7 @@ nav.navbar {
     width: 320px;
     background-color: #fff;
     border-radius: 3px;
-    box-shadow: #000 0px 0px 20px;
+    box-shadow: #000 0px 0px 8px;
 }
 
 .user-panel-header {
