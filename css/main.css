@@ -9,8 +9,31 @@ nav.navbar {
     border-radius: 0;
 }
 
-.navbar .logo {
+.logo {
     width: 50px;
     padding-top: 2px;
     margin-right: 5px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.landing-section {
+    height: 100vh;
+    background-image: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-nav {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+}
+
+.top-nav a {
+    color: #FFF;
+}
+
+.top-nav a:hover {
+    color: #18bc9c;
 }
