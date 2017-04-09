@@ -30,6 +30,7 @@ nav.navbar {
 
 .top-nav {
     background: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgb(255, 152, 0);
     font-size: 16px;
     position: fixed;
     width: 100%;

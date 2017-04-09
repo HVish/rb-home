@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     function animateTopBar() {
         var offset = $(window).scrollTop();
-        var c = 255 - offset * colorFactor;
+        var c = parseInt(255 - offset * colorFactor);
         if (offset < gradientOffset) {
             $('.top-nav').css({
                 background: "rgba(255, 255, 255, " + (offset * gradientFactor + 0.2) + ")"
