@@ -41,8 +41,7 @@ nav.navbar {
     color: #FFF;
 }
 
-.top-nav a:hover,
-.top-nav a:focus {
+.top-nav a:hover, .top-nav a:focus {
     color: #ff9800 !important;
 }
 
@@ -75,10 +74,7 @@ nav.navbar {
     border-color: #ff9800;
 }
 
-.user-panel button:hover,
-.user-panel button:active,
-.user-panel button:focus,
-.user-panel button:active:focus {
+.user-panel button:hover, .user-panel button:active, .user-panel button:focus, .user-panel button:active:focus {
     background-color: #ff6a00;
     border-color: #ff6a00;
     outline: none;
@@ -124,5 +120,20 @@ section.parallax-window {
 
 footer {
     padding: 20px 0px;
+    padding-top: 60px;
     font-size: 15px;
+}
+
+.foot h6 {
+    font-weight: 900;
+    font-size: 15px;
+    color: #ff9800;
+}
+
+.foot a {
+    color: #2c3e50;
+}
+
+.foot a:hover{
+  color: #ff9800;
 }
