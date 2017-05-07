@@ -11,14 +11,14 @@ $(document).ready(function() {
             $('.top-nav').css({
                 background: "rgba(255, 255, 255, " + (offset * gradientFactor + 0.2) + ")"
             });
-            $('.top-nav a').css({
+            $('.top-nav .container a, .nav-expand a').css({
                 color: "rgb(" + c + "," + c + "," + c + ")"
             });
         } else {
             $('.top-nav').css({
                 background: "rgba(255, 255, 255, 1)"
             });
-            $('.top-nav a').css({
+            $('.top-nav .container a, .nav-expand a').css({
                 color: "rgb(0,0,0)"
             });
         }
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(window).scroll(animateTopBar);
 
     // smooth scroll animation
-    $("a").click(function(e) {
+    $("a:not(.no-scroll)").click(function(e) {
         if (this.hash !== "") {
             e.preventDefault();
             var hash = this.hash;
@@ -36,6 +36,18 @@ $(document).ready(function() {
             }, 800, function() {
                 window.location.hash = hash;
             });
+        }
+    });
+
+    // nav toggle
+    var navShown = false;
+    $(".nav-expand").click(function () {
+        if (navShown) {
+            navShown = false;
+            $('.nav-expand-container').animate({'right': '-250'});
+        } else {
+            navShown = true;
+            $('.nav-expand-container').animate({'right': '0'});
         }
     });
 });

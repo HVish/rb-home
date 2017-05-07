@@ -22,38 +22,11 @@
 </head>
 
 <body>
+
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav class="navbar navbar-default hidden">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img class="logo" src="./tile.png" />
-                <!--a class="navbar-brand" href="#">RankersByte</a-->
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"> <a href="#home">Home <span class="sr-only">(current)</span></a></li>
-                    <li> <a href="#courses">Courses</span></a></li>
-                    <li> <a href="#about">About Us</span></a></li>
-                    <li> <a href="#benefits">Benefits</span></a></li>
-                    <li> <a href="#">Reviews</span></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="#"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-                    <li> <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- top-nav-container -->
     <div class="container-fluid top-nav-container">
         <div id="home" class="landing-section parallax-window" data-speed="0.4" data-parallax="scroll" data-image-src="./img/cover.jpg">
@@ -65,31 +38,47 @@
                     </div>
                     <ul class="nav navbar-nav">
                         <li class="active"> <a href="#home">Home <span class="sr-only">(current)</span></a></li>
-                        <li> <a href="#courses">Courses</span></a></li>
-                        <li> <a href="#about">About</span></a></li>
-                        <li> <a href="#benefits">Benefits</span></a></li>
-                        <li> <a href="#">Reviews</span></a></li>
+                        <li> <a href="#courses">Courses</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#benefits">Benefits</a></li>
+                        <li> <a href="#">Reviews</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li> <a href="#"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
                         <li> <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
+                <div class="nav-expand"> <a class="no-scroll"><span class="glyphicon glyphicon-menu-hamburger"></span></a></div>
+                <div class="nav-expand-container">
+                    <ul class="nav nav-primary">
+                        <li> <a href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                        <li> <a href="#courses"><i class="fa fa-home" aria-hidden="true"></i>Courses</a></li>
+                        <li> <a href="#about"><i class="fa fa-home" aria-hidden="true"></i>About</a></li>
+                        <li> <a href="#benefits"><i class="fa fa-home" aria-hidden="true"></i>Benefits</a></li>
+                        <li> <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Reviews</a></li>
+                    </ul>
+                    <ul class="nav nav-secondary">
+                        <li> <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Signup</a></li>
+                        <li> <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Login</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="user-panel">
-                <div class="user-panel-header">Login / Signup</div>
-                <div class="user-panel-body">
-                    <form class="form user-form" action="" method="post">
-                        <div class="form-group">
-                            <label class="control-label" for="username">Username</label>
-                            <input class="form-control" id="username" type="text" placeholder="Mobile">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" for="password">Password</label>
-                            <input class="form-control" id="password" type="password" placeholder="password">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
+            <div class="user-panel-container">
+                <div class="user-panel">
+                    <div class="user-panel-header">Login / Signup</div>
+                    <div class="user-panel-body">
+                        <form class="form user-form" action="" method="post">
+                            <div class="form-group">
+                                <label class="control-label" for="username">Username</label>
+                                <input class="form-control" id="username" type="text" placeholder="Mobile">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                <input class="form-control" id="password" type="password" placeholder="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
